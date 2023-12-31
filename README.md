@@ -49,3 +49,6 @@ It offers a range of features to enhance the user experience, including:
 3. Place the project files in the root directory of your server.
 4. Access the application through your server's URL, using the provided endpoints.
 5. Update any configuration files (e.g., database configuration) according to your environment.
+
+## Collaborators
+- [ [Alaa Moheb](https://github.com/alaaamoheb) - [Sohaila Kandil](https://github.com/SohailaKandil) - [Abdulrahman Essam](https://github.com/A-Ess12) - [Omnia Nabil](https://github.com/omniaEjust)]
