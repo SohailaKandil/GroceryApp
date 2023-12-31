@@ -7,8 +7,8 @@ This project is a web application for a grocery store, aiming to integrate datab
 ## Technologies Used
 
 - **Database:** MySQL Database Management System (DBMS)
-- **Backend:** PHP
-- **Frontend:** HTML and CSS
+- **Backend:** PHP.
+- **Frontend:** HTML and CSS. (Bootstrap)
 - **Repository Hosting:** [GitHub](https://github.com/alaaamoheb/GroceryApp)
 
 ### Key Features
