@@ -1,8 +1,26 @@
+<?php
+    include ("../db_connection.php");
+    $con = OpenCon();
+    session_start();
+    if (!isset($_SESSION["username"])) {
+        header("location: ../index.php");
+        exit(); // Make sure to exit after redirecting
+    }
+    $name = $_SESSION["username"] ;
+
+    $sql_rule = "SELECT rule FROM `users` WHERE user_name = '$name'";
+    $result_rule = $con -> query($sql_rule);
+    $result_rule = $result_rule->fetch_assoc();
+    if ($result_rule["rule"] == "user") {
+        header("location: ../home.php");
+        exit(); // Make sure to exit after redirecting
+    } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <!-- bootstrap css link -->
@@ -10,11 +28,6 @@
     rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
-    <!-- Font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
     <!-- css file -->
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -24,11 +37,20 @@
         <!-- First child -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
-                <img src="../images/logo1.png" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Welcome Guest</a>
+                            <h6 class="nav-link"> <?php echo "Welcome  $name" ?> </h6>
+                        </li>
+                        <li class="nav-item">
+                            <div class="button text-center mx-1">
+                                <a href="../log_out.php" class="btn btn-primary" ml-6>Log out</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="button text-center mx-1">
+                                <a href="../home.php"  class="btn btn-primary" ml-6>Home page</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -45,61 +67,23 @@
             <div class="col-md-12 bg-secondary p-1 d-flex align-items-center">
                 <div class="p-3">
                     <a href="#"><img src="../images/one.jpeg" alt="" class="admin_image"></a>
-                    <p class="text-light text-center">Admin Name</p>
                 </div>
                 <!-- Buttons -->
-                <div class="button text-center">
-                    <button class="my-3"><a href="insert_product.php" class="nav-link text-light bg-info my-1">Insert Products</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">View Products</a></button>
-                    <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert Categories</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">View Categories</a></button>
-                    <button><a href="index.php?insert_brand" class="nav-link text-light bg-info my-1">Insert Brands</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">View Brands</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">All Orders</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">All payments</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">List Users</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">Log out</a></button>
+                <div class="button text-center mx-1">
+                    <a href="products.php" class="btn btn-primary" ml-6>View Products</a>
+                </div>
+
+                <div class="button text-center mx-1">
+                    <a href="view_orders.php" class="btn btn-primary" ml-6>View orders</a>
                 </div>
             </div>
         </div>
 
-
-        <!-- fourth child -->
-        <div class="container my-3">
-            <?php  
-            if(isset($_GET["insert_category"])){
-                include("insert_categories.php");
-            }
-            if(isset($_GET["insert_brand"])){
-                include("insert_brands.php");
-            }
-            ?>
-        </div>
-
         <!-- last child -->
 <div class="bg-info p-3 text-center footer">
-    <p>All rights reserved by the one and only Buggy the Clown</p>
+    <p>Andalus store</p>
 </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 <!-- bootstrap js link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
