@@ -41,4 +41,11 @@ It offers a range of features to enhance the user experience, including:
 - `/shopping_cart.php`: Add a grocery item to the shopping cart.
 - `/buy_form.php`: Process the payment.
 
+## How to Run The Project
 
+1. Clone the repository:
+ git clone https://github.com/alaaamoheb/GroceryApp
+2. Ensure that your server supports PHP and is configured correctly.
+3. Place the project files in the root directory of your server.
+4. Access the application through your server's URL, using the provided endpoints.
+5. Update any configuration files (e.g., database configuration) according to your environment.
