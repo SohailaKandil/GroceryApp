@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+
+.bg-custom {
+    background-color: #1359a0;
+}
+
+.btn-custom {
+    background-color: #1359a0;
+    color: #fff;
+}
+
+.logo {
+    width: 5%;
+    height: 5%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.admin_image {
+    width: 100px;
+    object-fit: contain;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background-color: #6c757d;
+    padding-top: 20px;
+    transition: width 0.3s;
+    right: 0; /* Align the sidebar to the right */
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar li {
+    padding: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.content {
+    margin-right: 250px;
+    padding: 16px;
+    transition: margin-right 0.3s;
+}
+
+.content.collapsed {
+    margin-right: 70px;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed h2 {
+    display: none !important;
+}
+
+.sidebar.collapsed ul {
+    visibility: hidden;
+}
+
+.sidebar.collapsed .toggle-btn::before {
+    content: "";
+}
+
+.sidebar:not(.collapsed) .toggle-btn::before {
+    content: ""; /* Clear the content when the sidebar is not collapsed */
+}
+
+.toggle-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    margin: 10px;
+}
+
+/* Hide all elements inside the sidebar when collapsed, except the toggle button */
+.sidebar.collapsed *:not(.toggle-btn) {
+    display: none;
+}
+
+/* Show the toggle button only for collapsed state */
+.sidebar.collapsed .toggle-btn {
+    display: block;
+}
