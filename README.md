@@ -41,13 +41,9 @@ For example if you enter the page of the payment process you will be redirected 
 - `/filter.php?priceRange=20+-+28&brandName=egypt+foods&brandNationality=egypt&apply_filter=`: Filter the products.
 - `/shoping_cart.php?id=27p`: Add a grocery item to the shopping cart.
 - `/buy_form.php?id=27`: Process the payment.
--  `  `:
--  `    `:
--  `     `:
--  `    `:
--   `     `:
--    `      `:
--    `       `
+-  `/admin_area/index.php  `:Manager Details like view products , orders and expiration date of products.
+-  `/home.php`:Home page of the application.
+
 
 
 ## How to Run The Project
