@@ -30,16 +30,15 @@ It offers a range of features to enhance the user experience, including:
 - **Execluding Boycut Products:** Users can exclude boycotted products—those with shareholders solely from specific countries.
 ## App Endpoints
 
-- `/register.php`: Register a new user account.
-- `/login.php`: Log in to the application.
-- `/logout.php`: Log out of the application.
-- `/product_details.php`: View details of specific products.
-- `/contact.php`: Contact the team.
-- `/about_us.php`: View information about the app and the team.
-- `/search.php`: Search for products.
-- `/filter.php`: Filter the products.
-- `/shopping_cart.php`: Add a grocery item to the shopping cart.
-- `/buy_form.php`: Process the payment.
+- `https://andalosstore.000webhostapp.com/register.php`: Register a new user account.
+- `https://andalosstore.000webhostapp.com/login.php`: Log in to the application.
+- `https://andalosstore.000webhostapp.com/product_details.php?id=27`: View details of specific products.
+- `https://andalosstore.000webhostapp.com/contact.php`: Contact the team.
+- `https://andalosstore.000webhostapp.com/about_us.php`: View information about the app and the team.
+- `https://andalosstore.000webhostapp.com/search.php?search=7-10&submit=`: Search for products.
+- `https://andalosstore.000webhostapp.com/filter.php?priceRange=20+-+28&brandName=egypt+foods&brandNationality=egypt&apply_filter=`: Filter the products.
+- `https://andalosstore.000webhostapp.com/shoping_cart.php?id=27p`: Add a grocery item to the shopping cart.
+- `https://andalosstore.000webhostapp.com/buy_form.php?id=27`: Process the payment.
 
 ## How to Run The Project
 
