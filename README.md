@@ -51,4 +51,4 @@ It offers a range of features to enhance the user experience, including:
 5. Update any configuration files (e.g., database configuration) according to your environment.
 
 ## Collaborators
-- [ [Alaa Moheb](https://github.com/alaaamoheb) - [Sohaila Kandil](https://github.com/SohailaKandil) - [Abdulrahman Essam](https://github.com/A-Ess12) - [Omnia Nabil](https://github.com/omniaEjust)]
+[ [Alaa Moheb](https://github.com/alaaamoheb) - [Sohaila Kandil](https://github.com/SohailaKandil) - [Abdulrahman Essam](https://github.com/A-Ess12) - [Omnia Nabil](https://github.com/omniaEjust)]
