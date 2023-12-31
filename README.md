@@ -5,7 +5,7 @@
 This project is a web application for a grocery store, aiming to integrate databases with web development technologies. 
 
 ## Technologies Used
-ئء
+
 - **Database:** MySQL Database Management System (DBMS)
 - **Backend:** PHP.
 - **Frontend:** HTML and CSS. (Bootstrap)
@@ -41,6 +41,14 @@ For example if you enter the page of the payment process you will be redirected 
 - `/filter.php?priceRange=20+-+28&brandName=egypt+foods&brandNationality=egypt&apply_filter=`: Filter the products.
 - `/shoping_cart.php?id=27p`: Add a grocery item to the shopping cart.
 - `/buy_form.php?id=27`: Process the payment.
+-  `  `:
+-  `    `:
+-  `     `:
+-  `    `:
+-   `     `:
+-    `      `:
+-    `       `
+
 
 ## How to Run The Project
 
