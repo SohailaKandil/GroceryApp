@@ -32,15 +32,15 @@ It offers a range of features to enhance the user experience, including:
 Note that some links here will redirect you to other pages and the reason is that these pages might not be available to you as a user who didn't make an account yet
 For example if you enter the page of the payment process you will be redirected to the home page because you didn't make an account yet and then you can't buy a product.
 
-- `https://andalosstore.000webhostapp.com/register.php`: Register a new user account.
-- `https://andalosstore.000webhostapp.com/login.php`: Log in to the application.
-- `https://andalosstore.000webhostapp.com/product_details.php?id=27`: View details of specific products.
-- `https://andalosstore.000webhostapp.com/contact.php`: Contact the team.
-- `https://andalosstore.000webhostapp.com/about_us.php`: View information about the app and the team.
-- `https://andalosstore.000webhostapp.com/search.php?search=7-10&submit=`: Search for products.
-- `https://andalosstore.000webhostapp.com/filter.php?priceRange=20+-+28&brandName=egypt+foods&brandNationality=egypt&apply_filter=`: Filter the products.
-- `https://andalosstore.000webhostapp.com/shoping_cart.php?id=27p`: Add a grocery item to the shopping cart.
-- `https://andalosstore.000webhostapp.com/buy_form.php?id=27`: Process the payment.
+- `/register.php`: Register a new user account.
+- `/login.php`: Log in to the application.
+- `/product_details.php?id=27`: View details of specific products.
+- `/contact.php`: Contact the team.
+- `/about_us.php`: View information about the app and the team.
+- `/search.php?search=7-10&submit=`: Search for products.
+- `/filter.php?priceRange=20+-+28&brandName=egypt+foods&brandNationality=egypt&apply_filter=`: Filter the products.
+- `/shoping_cart.php?id=27p`: Add a grocery item to the shopping cart.
+- `/buy_form.php?id=27`: Process the payment.
 
 ## How to Run The Project
 
