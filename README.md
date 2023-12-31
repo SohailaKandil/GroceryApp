@@ -5,7 +5,7 @@
 This project is a web application for a grocery store, aiming to integrate databases with web development technologies. 
 
 ## Technologies Used
-
+ئء
 - **Database:** MySQL Database Management System (DBMS)
 - **Backend:** PHP.
 - **Frontend:** HTML and CSS. (Bootstrap)
@@ -29,6 +29,8 @@ It offers a range of features to enhance the user experience, including:
 - **Nationality Information:** Displays product nationality details if it's 100% Egyptian.
 - **Execluding Boycut Products:** Users can exclude boycotted products—those with shareholders solely from specific countries.
 ## App Endpoints
+Note that some links here will redirect you to other pages and the reason is that these pages might not be available to you as a user who didn't make an account yet
+For example if you enter the page of the payment process you will be redirected to the home page because you didn't make an account yet and then you can't buy a product.
 
 - `https://andalosstore.000webhostapp.com/register.php`: Register a new user account.
 - `https://andalosstore.000webhostapp.com/login.php`: Log in to the application.
