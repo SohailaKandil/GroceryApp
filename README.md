@@ -1,4 +1,4 @@
-# GroceryApp
+# Grocery Website
 
 ## Overview
 
