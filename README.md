@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web application for a grocery store, aiming to integrate databases with web development technologies. 
+This project is a web application for a grocery store, aiming to integrate databases with web development technologies. Link for the website: [Link](https://andalosstore.000webhostapp.com/index.php) (Note: you might need a VPN to run this website)
 
 ## Technologies Used
 
